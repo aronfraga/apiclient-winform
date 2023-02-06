@@ -43,7 +43,7 @@ namespace ApiClient {
 			string url = txtbox_url.Text;
 			if (txtbox_url.Text.Length > 0) {
 				Resp response = await method.Post(url, rich_body.Text);
-				rich_response.Text = response.Data;
+				rich_response.Text = json.Beatify(response.Data);
 				StatusCodeChange(response.Code);
 			}
 			timer.Stop();
@@ -56,7 +56,7 @@ namespace ApiClient {
 			string url = txtbox_url.Text;
 			if (txtbox_url.Text.Length > 0) {
 				Resp response = await method.Put(url, rich_body.Text);
-				rich_response.Text = response.Data;
+				rich_response.Text = json.Beatify(response.Data);
 				StatusCodeChange(response.Code);
 			}
 			timer.Stop();
