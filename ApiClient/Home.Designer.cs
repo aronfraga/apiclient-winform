@@ -198,11 +198,11 @@
 			// lbl_ver
 			// 
 			this.lbl_ver.AutoSize = true;
-			this.lbl_ver.Location = new System.Drawing.Point(11, 680);
+			this.lbl_ver.Location = new System.Drawing.Point(3, 680);
 			this.lbl_ver.Name = "lbl_ver";
-			this.lbl_ver.Size = new System.Drawing.Size(57, 13);
+			this.lbl_ver.Size = new System.Drawing.Size(72, 13);
 			this.lbl_ver.TabIndex = 4;
-			this.lbl_ver.Text = "V.0.5 Beta";
+			this.lbl_ver.Text = "V.0.0.35 Beta";
 			// 
 			// bar
 			// 
